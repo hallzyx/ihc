@@ -42,12 +42,16 @@ table {
 	border-spacing: 0;
 }
 /*PIE DE PAGINA*/
+h4{
+    font-size: 30px;
+}
 #footer{
 
+	font-size: 20;
     color: white;
 }
 .container_footer{
-background-color: rgb(70, 80, 221);
+	background-color: rgb(54, 60, 139);
 
 
 }
