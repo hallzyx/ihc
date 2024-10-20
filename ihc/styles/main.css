@@ -104,37 +104,34 @@ body {
 
 
 
-/*CSS de ?????  */
-body{
-    color: brown;
-}
+/*CSS de Alex  */
 
- .Titulo {
+ .TituloAlex {
             text-align: center;
             padding: 100px 20px;
             background-color: #f8f9fa;
         }
 
-.Titulo h1 {
+.TituloAlex h1 {
             color: #2e4373;
             font-size: 36px;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
-.Titulo p {
+.TituloAlex p {
             font-size: 18px;
             color: #6c757d;
             margin-bottom: 40px;
         }
 
-.botones {
+.botonesAlex {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
 
-.boton1 {
+.boton1Alex {
             background-color: #3b5998;
             color: white;
             border: none;
@@ -144,7 +141,7 @@ body{
             cursor: pointer;
         }
 
- .boton2 {
+ .boton2Alex {
             background-color: white;
             color: #3b5998;
             border: 1px solid #3b5998;
@@ -154,20 +151,20 @@ body{
             cursor: pointer;
         }
 
-.seccion-inferior {
+.seccion-inferioralex {
             display: flex;
             justify-content: space-between;
             padding: 100px 50px;
             background-color: white;
         }
 
-.seccion-inferior h2 {
+.seccion-inferioralex h2 {
             color: #2e4373;
             font-size: 28px;
             font-weight: bold;
         }
 
-.seccion-inferior p {
+.seccion-inferioralex p {
             font-size: 18px;
             color: #6c757d;
         }
