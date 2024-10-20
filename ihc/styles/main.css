@@ -1,3 +1,4 @@
+
 /* Reset de estilos básicos */
 * {
     margin: 0;
@@ -120,3 +121,71 @@ body {
         margin-bottom: 1rem;
     }
 }
+=======
+body{
+    color: brown;
+}
+
+ .Titulo {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f8f9fa;
+        }
+
+.Titulo h1 {
+            color: #2e4373;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+.Titulo p {
+            font-size: 18px;
+            color: #6c757d;
+            margin-bottom: 40px;
+        }
+
+.botones {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+.boton1 {
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+ .boton2 {
+            background-color: white;
+            color: #3b5998;
+            border: 1px solid #3b5998;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+.seccion-inferior {
+            display: flex;
+            justify-content: space-between;
+            padding: 100px 50px;
+            background-color: white;
+        }
+
+.seccion-inferior h2 {
+            color: #2e4373;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+.seccion-inferior p {
+            font-size: 18px;
+            color: #6c757d;
+        }
+>>>>>>> 63a8838f90a7bf6022ecf8cf80676408a0b51913

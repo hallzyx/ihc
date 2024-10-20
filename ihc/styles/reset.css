@@ -41,3 +41,34 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*PIE DE PAGINA*/
+#footer{
+
+    color: white;
+}
+.container_footer{
+background-color: rgb(70, 80, 221);
+
+
+}
+#footer ul li{
+    list-style:none;
+  
+}
+
+.logo_footer{
+    display:flex;
+    justify-content: space-between;
+    padding:0 15rem;
+    color:rgb(29, 32, 165);
+    margin-right:0 auto;
+    max-width: 1200px;
+}
+.logo_footer ul{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.logo_footer li{
+    padding-right:4rem;
+}
