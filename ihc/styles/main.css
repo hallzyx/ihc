@@ -64,3 +64,87 @@ body{
             font-size: 18px;
             color: #6c757d;
         }
+
+/*CSS Juan Pablo*/
+
+.Testimonios {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.testimonial-slider {
+    position: relative;
+    width: 600px; 
+    max-width: 90%;
+    text-align: center;
+}
+
+.testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial.active {
+    display: flex;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.opinion {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e4373;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.cargo {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button.prev {
+    left: -250px;
+}
+
+button.next {
+    right: -250px; 
+}
