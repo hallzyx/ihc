@@ -3,24 +3,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Anek Devanagari';
+  
 }
 
 body {
   background-color: #ffffff;
+  font-family: "Anek Devanagari", sans-serif;
 }
 
 .Titulo {
+  margin-top:2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 2rem;
+  padding: 10px;
   background-color: #ffffff;
-  font-size: 16px;
+  font-size: 2.5rem;
   color: #2B3E65;
   margin-bottom: 3rem;
+  
 }
-
+.Titulo h2{
+  font-family: "Anek Devanagari" !important;
+  font-weight:bold;
+}
 .p {
   font-size: 16px;
   width: 50%;
@@ -30,11 +36,14 @@ body {
   text-align: center;
   margin-bottom: 2rem;
 }
+.features_box{
+  padding:70px 0;
+}
 
 .features {
   display: flex;
   justify-content: space-around;
-  padding: 2rem;
+  
   background-color: #ffffff;
 }
 
@@ -44,7 +53,7 @@ body {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 2rem;
   transition: transform 0.3s ease;
 }
 
@@ -62,7 +71,7 @@ body {
 .feature h2 {
   font-size: 24px;
   color: #2B3E65;
-  margin-bottom: 0.5rem;
+  margin: 15px 0;
 }
 
 .feature p {
@@ -72,7 +81,7 @@ body {
 
 .boton {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 10px 12px 7px 12px;
   color: #4768A8;
   font-size: 18px;
   text-decoration: none;
@@ -82,37 +91,31 @@ body {
 
 .boton:hover {
   background-color: #155a8a;
+  color:white;
 }
 
-@media (max-width: 768px) {
-  .Titulo {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .feature {
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-}
 
 
 
 
 /*CSS de Alex  */
 
- .TituloAlex {
-            text-align: center;
-            padding: 100px 20px;
-            background-color: #f8f9fa;
-        }
 
-.TituloAlex h1 {
+
+ .TituloAlex {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align: center;
+            padding: 100px 0px;
+          }
+
+  .TituloAlex .box{
+    padding: 0 20rem;
+    position:relative;
+  }
+
+  .TituloAlex h1 {
             color: #2e4373;
             font-size: 36px;
             font-weight: bold;
@@ -123,6 +126,7 @@ body {
             font-size: 18px;
             color: #6c757d;
             margin-bottom: 40px;
+            line-height: 1.7rem;
         }
 
 .botonesAlex {
@@ -130,6 +134,8 @@ body {
             justify-content: center;
             gap: 20px;
         }
+
+
 
 .boton1Alex {
             background-color: #3b5998;
@@ -156,17 +162,21 @@ body {
             justify-content: space-between;
             padding: 100px 50px;
             background-color: white;
+            align-items:center;
         }
 
 .seccion-inferioralex h2 {
             color: #2e4373;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
+            max-width:450px;
         }
 
 .seccion-inferioralex p {
             font-size: 18px;
-            color: #6c757d;
+            color: #000000;
+            max-width: 650px;
+            line-height: 1.5rem;
         }
 
 
@@ -223,7 +233,7 @@ body {
     color: #6c757d;
 }
 
-button {
+.buttonMenu {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -252,4 +262,175 @@ button.prev {
 
 button.next {
     right: -250px; 
+}
+
+
+/*PIE DE PAGINA*/
+
+#footer{
+
+font-size: 20;
+  color: white;
+}
+.container_preFooter{
+  background-color: #2B3E65;
+  padding: 100px 30px;
+  color:white;
+}
+.container_preFooter div{
+  display:flex;
+  gap:15px;
+}
+.container_preFooter p{
+  padding: 17px 0 20px 0;
+}
+.container_preFooter h2{
+  font-size:30px;
+  font-weight:bold;
+}
+.container_preFooter button{
+  padding :13px 20px;
+  cursor:pointer;
+}
+.container_preFooter div button:nth-child(1){
+  background-color:white;
+  color: #2B3E65;
+  border: 2px solid white;
+}
+
+.container_preFooter div button:nth-child(2){
+  background-color:#2B3E65;
+  color:white;
+  border: 2px solid white;
+}
+
+
+footer ul{
+  display:flex;
+  padding:30px;
+  justify-content:space-between;
+  align-items:center;  
+}
+
+footer ul img{
+  height:40px;
+}
+footer ul .socialMediaLogo img{
+  height:20px;
+  opacity:0.5;
+  cursor:pointer;
+}
+
+footer ul a{
+  text-decoration:none;
+  color: #2B3E65
+}
+
+@media (min-width: 0px) {
+  
+  .TituloAlex .box{
+    padding: 2rem;
+  }
+  
+  .Titulo {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Titulo h2{
+    font-size:2rem;
+    margin: 0 20px;
+    text-align:center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .feature{
+    width:100%;
+    
+  }
+  .socialMediaLogo{
+    display:none;
+  }
+  .seccion-inferioralex{
+    flex-direction:column;
+    gap:30px;
+    text-align:center;
+   }
+
+  footer ul li:nth-child(1) img{
+      height:25px;
+  }
+  footer ul li:last-child{
+      font-size:12px;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .Titulo h2{
+    margin: 0 110px;
+  }
+  .TituloAlex .box{
+    padding: 5rem;
+  }
+  /* Small (sm): >= 640px */
+  .seccion-inferioralex{
+    flex-direction:row;
+    gap:55px;
+    text-align:left;
+   }
+   
+}
+
+@media (min-width: 768px){
+  /* Medium (md): >= 768px */
+  .socialMediaLogo{
+    display:block;
+  }
+  footer ul li:nth-child(1) img{
+    height:35px;
+  }
+  footer ul li:last-child{
+    font-size:15px;
+  }
+  .Titulo{
+    flex-direction:row;
+    text-align:left;
+  }
+  .features{
+    flex-direction:row;
+  }
+  .feature{
+    width:32%;
+    margin:none;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  /* Large (lg): >= 1024px */
+  .feature{
+    width:25%;
+  }
+  .Titulo h2{
+    font-size:2rem;
+    margin:auto;
+  }
+  .TituloAlex .box{
+    padding: 0 10rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Extra Large (xl): >= 1280px */
+  .TituloAlex .box{
+    padding: 0 20rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  /* 2XL: >= 1536px */
 }
