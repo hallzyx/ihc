@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>FraudGuard</title>
-<link rel="stylesheet" href="../styles/reset.css" />
-<link rel="stylesheet" href="../styles/main.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    </head>
+    <body>
 
-    <header>
-        
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="../assets/logo.png" alt="FraudGuard Logo" class="logo-img">
+        </div>
+    
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#">Bancos afiliados</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Soporte Técnico</a></li>
+                <li><a href="#">Más Opciones &#9662;</a></li>
+            </ul>
+    
+            <div class="auth-links">
+                <a href="#" class="login-link">Iniciar Sesión</a>
+                <a href="#" class="register-link">Regístrate</a>
+            </div>
+        </nav>
     </header>
+    
     <section class="TituloAlex">
         <h1>Controla tus finanzas en un solo lugar</h1>
         <p>Nuestra plataforma te permite gestionar todas tus cuentas financieras de manera sencilla y segura. Además, nuestra inteligencia artificial te alerta sobre transacciones fraudulentas en tiempo real.</p>
@@ -63,8 +80,23 @@
     </section>
 
 
-    <section>
-        <!--PARTE 4 Juan Pablo [Testimonios Slider]-->
+    <section class="Testimonios">
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <p class="opinion">"Desde que uso esta plataforma, he podido gestionar todas mis cuentas de manera eficiente y segura."</p>
+                <img src="../assets/logo1_slider_testimonios.png" alt="avatar 1" class="avatar">
+                <h3 class="nombre">John Doe</h3>
+                <p class="cargo">Gerente, ACME S.A.</p>
+            </div>
+            <div class="testimonial">
+                <p class="opinion">"La plataforma ha facilitado nuestro trabajo diario y mejorado la eficiencia del equipo."</p>
+                <img src="../assets/logo2_slider_testimonios.png" alt="avatar 2" class="avatar">
+                <h3 class="nombre">Jane Smith</h3>
+                <p class="cargo">Directora, XYZ Corp.</p>
+            </div>
+            <button class="prev">&#9664;</button>
+            <button class="next">&#9654;</button>
+        </div>
     </section>
 
 
