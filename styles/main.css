@@ -434,3 +434,175 @@ footer ul a{
 @media (min-width: 1536px) {
   /* 2XL: >= 1536px */
 }
+
+/*CSS Juan Pablo Testimonios*/
+
+/* Estilos específicos para el slider de testimonios */
+.slider-testimonio {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.testimonial-slider-container {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.testimonial-item {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-item.active {
+  display: flex;
+}
+
+.avatar-slider {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.opinion-slider {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2e4373;
+  margin-bottom: 10px;
+}
+
+.nombre-slider {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.cargo-slider {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.button-prev, .button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.button-prev:hover, .button-next:hover {
+  background-color: #e0e0e0;
+}
+
+.button-prev {
+  left: -250px;
+}
+
+.button-next {
+  right: -250px;
+}
+
+
+/*Header CSS Juan Pablo*/
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  height: 60px;
+  font-family: Arial, sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+  gap: 30px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #2e4373;
+}
+
+.auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-links a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.auth-links .login-link:hover {
+  background-color: #e0e0e0;
+}
+
+.auth-links .register-link {
+  background-color: #2e4373;
+  color: white;
+  border: none;
+}
+
+.auth-links .register-link:hover {
+  background-color: #1d2f52;
+}
