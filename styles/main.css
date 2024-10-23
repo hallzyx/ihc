@@ -1,10 +1,8 @@
-Ordena mi codigo CSS:
 /* CSS de Bryan Abad*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -638,123 +636,54 @@ footer ul a{
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: block; 
   }
 
   .nav-container {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
     background-color: white;
-    width: 100%;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .nav-container.show {
+    left: 0;
+  }
+
+  .nav-menu {
+    flex-direction: column;
     gap: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
+
 
 @media (max-width: 480px) {
   .main-header {
     padding: 5px 10px;
+    flex-direction: row;
   }
 
   .logo-container {
     width: 140px;
   }
-}
-
-
-.nav-menu {
-  display: flex;
-  list-style: none;
-  gap: 80px;
-  margin: 0;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  font-weight: 500;
-  color: black;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.nav-menu a:hover {
-  color: #2e4373;
-}
-
-.auth-links {
-  display: flex;
-  gap: 10px;
-}
-
-.auth-links a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  padding: 8px 16px;
-  border: 1px solid black;
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  transition: background-color 0.3s ease;
-}
-
-.auth-links .login-link:hover {
-  background-color: #e0e0e0;
-}
-
-.auth-links .register-link {
-  background-color: #2e4373;
-  color: white;
-  border: none;
-}
-
-.auth-links .register-link:hover {
-  background-color: #1d2f52;
-}
-
-
-@media (max-width: 768px) and (min-width: 601px) {
-  .main-header {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-  }
-
-  .logo-container {
-      margin-left: 0;
-  }
-
-  .nav-container {
-      display: none;
-  }
 
   .auth-links {
-      display: flex;
-      gap: 10px;
+    flex-direction: column;
+    gap: 8px;
   }
 }
 
-@media (max-width: 600px) {
-  .main-header {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-  }
 
-  .logo-container {
-      margin-bottom: 10px;
-  }
 
-  .auth-links {
-      display: none;
-  }
-}
-
+/*MEDIA QUERY PARA SLIDER*/
 
 @media (max-width: 768px) {
   .opinion-slider {
