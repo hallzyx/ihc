@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
     showTestimonial(currentIndex);
   });
   
+  const menuToggle = document.getElementById('menu-toggle');
+  const navContainer = document.getElementById('nav-container');
+
+menuToggle.addEventListener('click', () => {
+    navContainer.style.display = navContainer.style.display === 'flex' ? 'none' : 'flex';
+});

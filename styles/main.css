@@ -1,3 +1,4 @@
+Ordena mi codigo CSS:
 /* CSS de Bryan Abad*/
 * {
   margin: 0;
@@ -489,36 +490,51 @@ footer ul a{
   color: #6c757d;
 }
 
-.button-prev, .button-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: white;
-  border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.button-prev:hover, .button-next:hover {
-  background-color: #e0e0e0;
+.button-prev,
+.button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .button-prev {
-  left: -250px;
+    left: 10px;
 }
 
 .button-next {
-  right: -250px;
+    right: 10px;
 }
+
+@media (max-width: 480px) {
+    .button-prev,
+    .button-next {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .button-prev {
+        left: 5px;
+    }
+
+    .button-next {
+        right: 5px;
+    }
+}
+
 
 
 /*Header CSS Juan Pablo*/
@@ -532,20 +548,28 @@ footer ul a{
   border-bottom: 1px solid #ddd;
   height: 60px;
   font-family: Arial, sans-serif;
+  position: relative;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: flex-start;
   width: 180px;
   height: 50px;
-  margin-left: 20px;
+}
+
+.menu-toggle {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 
 .logo-img {
-  width: 100%;
-  height: 100%;
+  max-width: 160px;
+  height: auto;
   object-fit: contain;
 }
 
@@ -555,6 +579,11 @@ footer ul a{
   justify-content: space-evenly;
   flex: 1;
   gap: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-container.hidden {
+  display: none;
 }
 
 .nav-menu {
@@ -605,4 +634,175 @@ footer ul a{
 
 .auth-links .register-link:hover {
   background-color: #1d2f52;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-container {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header {
+    padding: 5px 10px;
+  }
+
+  .logo-container {
+    width: 140px;
+  }
+}
+
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  margin: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #2e4373;
+}
+
+.auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-links a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.auth-links .login-link:hover {
+  background-color: #e0e0e0;
+}
+
+.auth-links .register-link {
+  background-color: #2e4373;
+  color: white;
+  border: none;
+}
+
+.auth-links .register-link:hover {
+  background-color: #1d2f52;
+}
+
+
+@media (max-width: 768px) and (min-width: 601px) {
+  .main-header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+  }
+
+  .logo-container {
+      margin-left: 0;
+  }
+
+  .nav-container {
+      display: none;
+  }
+
+  .auth-links {
+      display: flex;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .logo-container {
+      margin-bottom: 10px;
+  }
+
+  .auth-links {
+      display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .opinion-slider {
+      font-size: 18px;
+  }
+
+  .nombre-slider {
+      font-size: 16px;
+  }
+
+  .cargo-slider {
+      font-size: 14px;
+  }
+
+  .testimonial-slider-container {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .opinion-slider {
+      font-size: 16px;
+  }
+
+  .nombre-slider {
+      font-size: 14px;
+  }
+
+  .cargo-slider {
+      font-size: 12px;
+  }
+
+  .avatar-slider {
+      width: 60px;
+      height: 60px;
+  }
+
+  .button-prev, .button-next {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+  }
+
+  .button-prev {
+      left: -40px;
+  }
+
+  .button-next {
+      right: -40px;
+  }
 }
