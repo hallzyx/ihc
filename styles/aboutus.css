@@ -1,7 +1,9 @@
 *{
     font-family:"Anek Devanagari";
 }
-
+body{
+  display:block;
+}
 #main_wrap{
     display:flex;
     flex-direction:column;
