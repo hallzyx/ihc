@@ -92,6 +92,50 @@ body {
   background-color: #155a8a;
   color:white;
 }
+/*CSS de Bryan Abad - Bancos afiliados_Scotiabank*/
+body {
+  font-family: "Anek Devanagari";
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+.container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.text-section {
+  max-width: 400px;
+  margin-right: 20px;
+}
+.text-section h2 {
+  color: #2b3e65;
+  font-size: 23px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #4768a8;
+  padding-bottom: 10px;
+  border-radius: 2px;
+}
+.text-section p {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.image-section img {
+  width: 250px;
+  border-radius: 8px;
+}
+
 
 
 
