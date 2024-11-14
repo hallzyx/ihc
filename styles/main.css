@@ -219,7 +219,7 @@ a
         .ibc {
           display: flex;
           align-items: center;
-          background-color: pink;
+          background-color: white;
           padding: 20px;
           max-width: 800px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -246,7 +246,7 @@ a
         }
         .texto-ib h2 {
           font-size: 24px;
-          color: #1a1a1a;
+          color: #2b3e65;
           margin: 0;
           position: relative;
           text-align: right;
