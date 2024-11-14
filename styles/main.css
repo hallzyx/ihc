@@ -218,12 +218,15 @@ body {
 a
         .ibc {
           display: flex;
-          background-color: white;
-          border-radius: 10px;
+          align-items: center;
+          background-color: #fff;
+          padding: 20px;
+          max-width: 800px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          overflow: hidden;
-          max-width: 900px;
-          width: 100%;
+          font-family: Anek Devanagari;
+          margin: 0;
+          justify-content: center;
+          min-height: 100vh;
         }
         .img-ib {
           flex: 1;
