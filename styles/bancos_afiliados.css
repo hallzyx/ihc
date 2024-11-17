@@ -4,11 +4,10 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 50px;
     font-family: Anek Devanagari;
     margin: 0;
     justify-content: center;
-    min-height: 100vh;
   }
   .text-section {
     max-width: 370px;
@@ -39,11 +38,10 @@
     display: flex;
     align-items: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 50px;
     font-family: Anek Devanagari;
     margin: 0;
     justify-content: center;
-    min-height: 100vh;
     flex-direction: row-reverse;
 }
 
@@ -72,6 +70,110 @@
 .image-section-ib img {
     width: 310px;
     border-radius: 10px;
+}
+
+/*NICKK CSS*/
+.container-ib-bcp {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px;
+  font-family: Anek Devanagari;
+  margin: 0;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.text-section-ib-bcp {
+  max-width: 370px;
+  margin-left: 80px; 
+}
+
+.text-section-ib-bcp h2 {
+  color: #2b3e65;
+  font-size: 23px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #4768a8;
+  padding-bottom: 10px;
+  border-radius: 2px;
+  text-align: right;
+}
+
+.text-section-ib-bcp p {
+  font-size: 14px;
+  color: #000000;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.image-section-ib-bcp img {
+  width: 310px;
+  border-radius: 10px;
+}
+
+/* Contenedor general */
+.container, .container-ib, .container-ib-bcp {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 80px; /* Aumentado para más separación */
+  font-family: Anek Devanagari;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1400px; /* Ajustar el ancho máximo */
+  gap: 60px; /* Separación entre las divisiones */
+}
+
+/* Ajuste para las secciones de texto */
+.text-section, .text-section-ib, .text-section-ib-bcp {
+  max-width: 550px; /* Aumentar para ocupar más espacio */
+  margin: 0 30px;
+}
+
+.text-section h2, .text-section-ib h2, .text-section-ib-bcp h2 {
+  color: #2b3e65;
+  font-size: 30px; /* Aumentar tamaño de fuente */
+  margin-bottom: 15px;
+  border-bottom: 5px solid #4768a8; /* Grosor del borde */
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+
+.text-section p, .text-section-ib p, .text-section-ib-bcp p {
+  font-size: 18px; /* Aumentar tamaño de fuente */
+  color: #000000;
+  margin-top: 20px;
+  line-height: 1.8; /* Aumentar para mejor legibilidad */
+}
+
+/* Ajuste para las imágenes */
+.image-section img, .image-section-ib img, .image-section-ib-bcp img {
+  width: 450px; /* Aumentar el tamaño de la imagen */
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-section img:hover, .image-section-ib img:hover, .image-section-ib-bcp img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1200px) {
+  .container, .container-ib, .container-ib-bcp {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      gap: 40px;
+  }
+  .text-section, .text-section-ib, .text-section-ib-bcp {
+      max-width: 100%;
+      text-align: center;
+  }
+  .image-section img, .image-section-ib img, .image-section-ib-bcp img {
+      width: 100%;
+      max-width: 400px;
+  }
 }
 
 
