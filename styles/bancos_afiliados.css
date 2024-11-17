@@ -1,0 +1,106 @@
+/*CSS de Bryan Abad - Bancos afiliados_Scotiabank*/
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    font-family: Anek Devanagari;
+    margin: 0;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  .text-section {
+    max-width: 370px;
+    margin-right: 80px;
+  }
+  .text-section h2 {
+    color: #2b3e65;
+    font-size: 23px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #4768a8;
+    padding-bottom: 10px;
+    border-radius: 2px;
+  }
+  .text-section p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  .image-section img {
+    width: 310px;
+    border-radius: 10px;
+  }
+
+/*CSS ALEX BANCOS AFILIADOS*/
+
+.container-ib {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    font-family: Anek Devanagari;
+    margin: 0;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: row-reverse;
+}
+
+.text-section-ib {
+    max-width: 370px;
+    margin-left: 80px; 
+}
+
+.text-section-ib h2 {
+    color: #2b3e65;
+    font-size: 23px;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #4768a8;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    text-align: right;
+}
+
+.text-section-ib p {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.image-section-ib img {
+    width: 310px;
+    border-radius: 10px;
+}
+
+
+/*CSS JUAN PABLO BANCOS AFILIADOS*/
+
+.container-ba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 auto; 
+    margin-top: 50px; 
+    width: 768px; 
+    height: auto; 
+    min-height: 214px;
+    border-radius: 10px;
+    text-align: center;
+}
+.container-ba h1 {
+    color: #2b3e65;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.container-ba p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}

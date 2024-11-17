@@ -17,7 +17,7 @@ body{
 }
 
 #title .img_wrap{
-    height:200px;´
+    height:200px;
     width:100%;
     overflow:hidden;
     border-radius: 10px 10px 0 0;
@@ -110,7 +110,7 @@ body{
 }
 #second_box ul{
   display:flex;
-  jusitfy-content:space-between;
+  justify-content:space-between;
   gap:100px;
 }
 #second_box ul li{
