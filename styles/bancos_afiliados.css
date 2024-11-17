@@ -111,54 +111,54 @@
   border-radius: 10px;
 }
 
-/* Contenedor general */
+
 .container, .container-ib, .container-ib-bcp {
   display: flex;
   align-items: flex-start;
   background-color: #fff;
-  padding: 80px; /* Aumentado para más separación */
+  padding: 80px; 
   font-family: Anek Devanagari;
   margin: 0 auto;
   justify-content: space-between;
-  max-width: 1400px; /* Ajustar el ancho máximo */
-  gap: 60px; /* Separación entre las divisiones */
+  max-width: 1400px;
+  gap: 60px; 
 }
 
-/* Ajuste para las secciones de texto */
+
 .text-section, .text-section-ib, .text-section-ib-bcp {
-  max-width: 550px; /* Aumentar para ocupar más espacio */
+  max-width: 550px;
   margin: 0 30px;
 }
 
 .text-section h2, .text-section-ib h2, .text-section-ib-bcp h2 {
   color: #2b3e65;
-  font-size: 30px; /* Aumentar tamaño de fuente */
+  font-size: 30px;
   margin-bottom: 15px;
-  border-bottom: 5px solid #4768a8; /* Grosor del borde */
+  border-bottom: 5px solid #4768a8;
   padding-bottom: 20px;
   border-radius: 4px;
 }
 
 .text-section p, .text-section-ib p, .text-section-ib-bcp p {
-  font-size: 18px; /* Aumentar tamaño de fuente */
+  font-size: 18px;
   color: #000000;
   margin-top: 20px;
-  line-height: 1.8; /* Aumentar para mejor legibilidad */
+  line-height: 1.8; 
 }
 
-/* Ajuste para las imágenes */
+
 .image-section img, .image-section-ib img, .image-section-ib-bcp img {
-  width: 450px; /* Aumentar el tamaño de la imagen */
+  width: 450px; 
   height: auto;
   border-radius: 15px;
   transition: transform 0.3s ease-in-out;
 }
 
 .image-section img:hover, .image-section-ib img:hover, .image-section-ib-bcp img:hover {
-  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  transform: scale(1.05);
 }
 
-/* Ajustes para pantallas más pequeñas */
+
 @media (max-width: 1200px) {
   .container, .container-ib, .container-ib-bcp {
       flex-direction: column;
